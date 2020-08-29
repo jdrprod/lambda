@@ -12,7 +12,7 @@ let rec subst x y = function
   | _ as t -> t
 
 (* Alpha conversion *)
-let rec alpha x y = subst x (Var y)
+let alpha x y = subst x (Var y)
 
 (* Alpha normalization *)
 let alpha_norm t =
